@@ -23,7 +23,7 @@ jobs:
       - name: Install Gradle wrapper
         run: |
           cd android-client
-          gradle wrapper --gradle-version 8.0.2
+          gradle wrapper --gradle-version 7.6.1
           chmod +x gradlew
       
       - name: Build APK
