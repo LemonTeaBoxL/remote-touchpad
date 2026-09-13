@@ -20,11 +20,8 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
       
-      - name: Install Gradle wrapper
-        run: |
-          cd android-client
-          gradle wrapper --gradle-version 7.6.1
-          chmod +x gradlew
+      - name: Make gradlew executable
+        run: chmod +x android-client/gradlew
       
       - name: Build APK
         run: |
